@@ -1,0 +1,114 @@
+.wall-printing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #daf1ff;
+    padding: 50px;
+    gap: 20px;
+}
+
+.text-section {
+    flex: 1;
+    max-width: 40%;
+}
+
+.text-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.text-section p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.consultation-btn {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.consultation-btn:hover {
+    background-color: #ffcc00;
+}
+
+.image-section img {
+    max-width: 250px;
+    height: auto;
+}
+
+.features-section {
+    flex: 1;
+    text-align: left;
+    max-width: 40%;
+   
+}
+
+.highlight-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d6006d;
+    text-align: left;
+    
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.features-list li {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.features-list .icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+    .wall-printing-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section, .features-section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .image-section img {
+        max-width: 200px;
+    }
+
+    .features-list {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-section h1 {
+        font-size: 2rem;
+    }
+
+    .highlight-text {
+        font-size: 1.5rem;
+    }
+
+    .features-list li {
+        font-size: 1rem;
+    }
+}

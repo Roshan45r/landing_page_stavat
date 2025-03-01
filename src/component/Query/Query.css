@@ -1,0 +1,91 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white; /* White background */
+  color: #333; /* Dark gray text for readability */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px; /* Added space at the bottom */
+}
+
+h2 {
+  color: #0078d4; /* Light blue heading */
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input-group input {
+  width: 48%;
+}
+
+input, textarea {
+  font-family: 'DM Sans', sans-serif;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px;
+  background: #f0f8ff; /* Light bluish shade */
+  color: #333;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  background: #e3f2fd; /* Lighter blue on focus */
+  border-color: #0078d4;
+}
+
+::placeholder {
+  color: #666;
+  opacity: 0.7;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.send-btn {
+  background-color: #ffb6c1; /* Light pink button */
+  color: black;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.send-btn:hover {
+  background-color: #ff8aa0; /* Slightly darker pink on hover */
+  transform: scale(1.05);
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0078d4; /* Light blue message text */
+}

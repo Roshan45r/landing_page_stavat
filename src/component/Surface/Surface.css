@@ -1,0 +1,108 @@
+/* Container */
+.surfaces-container {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+/* Title and Heading */
+.surfaces-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.surfaces-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* Subheading */
+.surfaces-subheading {
+    color: #d6006d;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Grid Layout */
+.surfaces-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Individual Surface Card */
+.surface-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.surface-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.surface-image:hover {
+    transform: scale(1.1);
+}
+
+/* Surface Name */
+.surface-name {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .surfaces-heading {
+        font-size: 2rem;
+    }
+    
+    .surfaces-grid {
+        gap: 30px;
+    }
+
+    .surface-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .surface-name {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .surfaces-container {
+        padding: 40px 15px;
+    }
+
+    .surfaces-heading {
+        font-size: 1.8rem;
+    }
+
+    .surfaces-subheading {
+        font-size: 1rem;
+    }
+
+    .surface-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .surface-name {
+        font-size: 0.85rem;
+    }
+}

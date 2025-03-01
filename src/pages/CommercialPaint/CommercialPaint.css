@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(118, 66, 123);
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(234, 175, 206), rgb(246, 94, 213));
+    padding: 20px;
+  }
+  
+  /* Responsive Hero Section */
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 180px;
+      font-size: 32px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section {
+      height: 150px;
+      font-size: 24px;
+    }
+  }
+  
+  /* Content Section */
+  .content-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+  }
+  
+  /* Responsive Content */
+  @media (max-width: 768px) {
+    .content-section {
+      padding: 30px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content-section {
+      padding: 20px 10px;
+    }
+  }
+  
+  /* Section Title */
+  .section-title {
+    color: #a00064;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Section Text */
+  .section-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 0 40px;
+  }
+  
+  /* Responsive Text */
+  @media (max-width: 768px) {
+    .section-text {
+      font-size: 14px;
+      padding: 0 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-text {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+  
